@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use MarcReichel\IGDBLaravel\Models\Game;
 
 class HomeController extends Controller
 {
@@ -21,9 +22,12 @@ class HomeController extends Controller
         // return Inertia::render('Home', [
         //     'hola' => $hola
         // ]);
+       
+
 
         return view('welcome', [
             'topgames' => $topgames->data
+            
         ]);
 
         

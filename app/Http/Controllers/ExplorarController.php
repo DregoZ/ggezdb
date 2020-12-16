@@ -23,10 +23,10 @@ class ExplorarController extends Controller
             
         $topgames = getTopGames();
 
-        // return inertia('Explorar', [
-        //     'topgames' => $topgames->data
-        // ]);
+        return inertia('Explorar', [
+            'topgames' => $topgames->data
+        ]);
             
-        return $topgames->data;
+        
     }
 }
